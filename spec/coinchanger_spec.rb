@@ -16,4 +16,25 @@ describe 'coinchanger' do
   it 'returns 5 when given 5' do
     expect(coinchanger(5)).to eq '5'
   end
+
+  it 'returns 10 when given 10' do
+    expect(coinchanger(10)).to eq '10'
+  end
+
+  it 'returns 20 when given 20' do
+    expect(coinchanger(20)).to eq '20'
+  end
+
+  it 'returns 50 when given 50' do
+    expect(coinchanger(50)).to eq '50'
+  end
+
+  it 'returns 100 when given 100' do
+    expect(coinchanger(100)).to eq '100'
+  end
+
+  it 'returns 200 when given 200' do
+    expect(coinchanger(200)).to eq '200'
+  end
+  
 end

@@ -1,11 +1,17 @@
 def coinchanger(money)
-  if money == 5
-    '5'
-  elsif money == 2
-    '2'
-  elsif money == 1
-    '1'
-  else
-    '0'
-  end
+
+  change = {
+    0 => "0",
+    1 => "1",
+    2 => "2",
+    5 => "5",
+    10 => "10",
+    20 => "20",
+    50 => "50",
+    100 => "100",
+    200 => "200"
+  }
+
+  change[money]
+
 end
