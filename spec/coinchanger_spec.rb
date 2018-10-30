@@ -6,4 +6,8 @@ describe 'coinchanger' do
       expect(coinchanger(change)).to eq change
     end
   end
+
+    # it 'returns [2, 2] when given 4' do
+    #   expect(coinchanger(4)).to eq [2, 2]
+    # end
 end

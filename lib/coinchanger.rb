@@ -1,16 +1,11 @@
 def coinchanger(money)
 
-  change = {
-    0 => 0,
-    1 => 1,
-    2 => 2,
-    5 => 5,
-    10 => 10,
-    20 => 20,
-    50 => 50,
-    100 => 100,
-    200 => 200
-  }
+  coins = [200, 100, 50, 20, 10, 5, 2, 1]
 
-  change[money]
+  coins.each do |change|
+    if change == money
+      return money
+    end
+  end
+  # change[money]
 end
