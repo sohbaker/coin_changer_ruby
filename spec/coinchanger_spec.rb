@@ -36,5 +36,9 @@ describe 'coinchanger' do
   it 'returns 200 when given 200' do
     expect(coinchanger(200)).to eq '200'
   end
-  
+
+  it 'returns 2 and 1 when given 3' do
+    expect(coinchanger(3)).to eq "2, 1"
+  end
+
 end

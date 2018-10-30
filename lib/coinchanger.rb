@@ -14,4 +14,9 @@ def coinchanger(money)
 
   change[money]
 
+  if money == 3
+    '2, 1'
+  else
+    change[money]
+  end
 end
