@@ -1,6 +1,10 @@
 require 'coinchanger'
 
 describe 'coinchanger' do
+  it 'returns 5 x 200 coins if given 1000' do
+    expect(change_number_of_times(1000, 200)).to eq [200, 200, 200, 200, 200]
+  end
+
   [200, 100, 50, 20, 10, 5, 2, 1].each do |change|
     it "returns change when given change" do
       expect(coinchanger(change)).to eq change
@@ -16,6 +20,8 @@ describe 'coinchanger' do
       expect(coinchanger(change * 2)).to eq [change] * 2
     end
   end
+
+
 
   # it 'returns [2, 2] when given 4' do
   #   expect(coinchanger(4)).to eq [2, 2]
