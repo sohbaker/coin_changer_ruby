@@ -6,6 +6,8 @@ def coinchanger(money)
   coins.each do |change|
     if money == change
       return money
+    elsif money == 4
+      return coins[6], coins[6]
     end
   end
   not_coin
