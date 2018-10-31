@@ -23,4 +23,8 @@ describe 'coinchanger' do
     expect(coinchanger(40)).to eq [20, 20]
   end
 
+  it 'returns [200, 200] when given 400' do
+    expect(coinchanger(400)).to eq [200, 200]
+  end
+
 end
