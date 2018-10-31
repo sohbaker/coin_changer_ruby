@@ -15,7 +15,16 @@ describe 'coinchanger' do
     expect(coinchanger(6)).to eq "not a coin"
   end
 
-    it 'returns [2, 2] when given 4' do
-      expect(coinchanger(4)).to eq [2, 2]
-    end
+  it 'returns [2, 2] when given 4' do
+    expect(coinchanger(4)).to eq [2, 2]
+  end
+
+  it 'returns [20, 20] when given 40' do
+    expect(coinchanger(40)).to eq [20, 20]
+  end
+
+  it 'returns [200, 200] when given 400' do
+    expect(coinchanger(400)).to eq [200, 200]
+  end
+    
 end
