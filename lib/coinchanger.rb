@@ -11,8 +11,8 @@ def coinchanger(money)
     elsif money == 4
       return coins[6], coins[6]
     elsif money == 40
-      half = money / 2
-      not_coin = half, half
+        half = money / 2
+        not_coin = half, half
     end
   end
   not_coin
