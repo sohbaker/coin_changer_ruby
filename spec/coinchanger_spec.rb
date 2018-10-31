@@ -11,6 +11,9 @@ describe 'coinchanger' do
     expect(coinchanger(3)).to eq "not a coin"
   end
 
+  it 'returns "not a coin" when given a coin which is not in the array' do
+    expect(coinchanger(6)).to eq "not a coin"
+  end
 
     # it 'returns [2, 2] when given 4' do
     #   expect(coinchanger(4)).to eq [2, 2]
