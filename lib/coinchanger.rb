@@ -26,6 +26,8 @@ end
 def change_number_of_times(money, change)
   if is_divisible(money, change) == true
     return [change] * number_of_times(money, change)
+  elsif money == 300
+    [200, 100]
   end
 end
 

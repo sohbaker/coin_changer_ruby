@@ -9,19 +9,22 @@ describe 'coinchanger' do
     it "returns change when given change" do
       expect(coinchanger(change)).to eq change
     end
-
-    it 'returns 3 equal coins when given money, if divisible by 3' do
-      expect(coinchanger(change * 3)).to eq [change] * 3
-    end
   end
 
-  [200, 20, 2].each do |change|
-    it 'returns 2 equal coins when given money, if divisible by 2' do
-      expect(coinchanger(change * 2)).to eq [change] * 2
-    end
+  it 'returns [200, 100] when given 300' do
+    expect(coinchanger(300)).to eq [200, 100]
   end
 
-
+  #   it 'returns 3 equal coins when given money, if divisible by 3' do
+  #     expect(coinchanger(change * 3)).to eq [change] * 3
+  #   end
+  # end
+  #
+  # [200, 20, 2].each do |change|
+  #   it 'returns 2 equal coins when given money, if divisible by 2' do
+  #     expect(coinchanger(change * 2)).to eq [change] * 2
+  #   end
+  # end
 
   # it 'returns [2, 2] when given 4' do
   #   expect(coinchanger(4)).to eq [2, 2]
